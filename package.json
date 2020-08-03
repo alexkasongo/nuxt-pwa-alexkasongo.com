@@ -1,0 +1,30 @@
+{
+  "name": "alex-kasongo",
+  "version": "1.0.0",
+  "description": "My portfolio site",
+  "author": "Alex Kasongo",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "heroku-postbuild": "npm run build"
+  },
+  "dependencies": {
+    "@nuxtjs/prismic": "^1.2.3",
+    "cookies": "^0.8.0",
+    "nuxt": "^2.14.0",
+    "prismic-javascript": "^2.7.1",
+    "prismic-vue": "^2.0.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "cross-env": "^7.0.2",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.44.1"
+  }
+}

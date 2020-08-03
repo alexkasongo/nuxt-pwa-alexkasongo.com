@@ -1,0 +1,16 @@
+/*
+* LINKS
+*/
+a {
+    text-decoration: none;
+    @include para($chartreuse);
+}
+
+a:focus {
+    outline: none;
+}
+
+a:active {
+    position: relative;
+    top: 1px;
+}

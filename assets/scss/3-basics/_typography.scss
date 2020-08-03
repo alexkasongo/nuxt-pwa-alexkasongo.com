@@ -1,0 +1,112 @@
+/*
+*   Font mixins
+*/
+@mixin h1($color: $primary-font-color, $family: $bold-font, $size: $font-h1) {
+    color: $color;
+    font-family: $family;
+    font-size: $size;
+    @media (min-width: $tablet) {
+    }
+}
+@mixin h2($color: $primary-font-color, $family: $bold-font, $size: $font-h2) {
+    color: $color;
+    font-family: $family;
+    font-size: $size;
+    @media (min-width: $tablet) {
+    }
+}
+@mixin h3($color: $primary-font-color, $family: $bold-font, $size: $font-h3) {
+    color: $color;
+    font-family: $family;
+    font-size: $size;
+    @media (min-width: $tablet) {
+    }
+}
+@mixin h4($color: $primary-font-color, $family: $bold-font, $size: $font-h4) {
+    color: $color;
+    font-family: $family;
+    font-size: $size;
+    @media (min-width: $desktop) {
+    }
+}
+@mixin h5($color: $primary-font-color, $family: $bold-font, $size: $font-h5) {
+    color: $color;
+    font-family: $family;
+    font-size: $size;
+    @media (min-width: $tablet) {
+    }
+}
+@mixin h6($color: $primary-font-color, $family: $bold-font, $size: $font-h6) {
+    color: $color;
+    font-family: $family;
+    font-size: $size;
+    @media (min-width: $tablet) {
+    }
+}
+@mixin caption($color: $silver, $family: $Light-font) {
+    color: $color;
+    font-family: $family;
+    font-size: 14px;
+    line-height: 1.45;
+    @media (min-width: $tablet) {
+    }
+}
+@mixin para($color: $primary-font-color, $family: $Light-font) {
+    color: $color;
+    font-family: $family;
+    font-size: 16px;
+    line-height: 1.45;
+    @media (min-width: $tablet) {
+    }
+}
+@mixin link($color: $primary-font-color, $family: $bold-font) {
+    color: $color;
+    font-family: $family;
+    font-size: 14px;
+    @media (min-width: $tablet) {
+    }
+}
+@mixin text($color: $primary-font-color, $family: $Light-font) {
+    color: $color;
+    font-family: $family;
+    font-size: 16px;
+    @media (min-width: $tablet) {
+    }
+}
+
+/*
+* Shared styling
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p:empty {
+    display: none;
+}
+p {
+    @include para();
+}
+.h1 {
+    @include h1();
+}
+.h2 {
+    @include h2();
+}
+.h3 {
+    @include h3();
+}
+.h4 {
+    @include h4();
+}
+.h5 {
+    @include h5();
+}
+.h6 {
+    @include h6();
+}
