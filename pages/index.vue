@@ -1,7 +1,8 @@
 <template>
   <section>
     <!-- Banner component -->
-    <homepage-banner :banner="banner" />
+    <!-- <homepage-banner :banner="banner" /> -->
+
     <!-- Slices block component -->
     <slices-block :slices="slices" />
   </section>

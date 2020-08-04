@@ -1,0 +1,6 @@
+.default {
+  height: 100vh;
+  @include flexbox;
+  @include flex-direction(column);
+  @include justify-content(space-between);
+}

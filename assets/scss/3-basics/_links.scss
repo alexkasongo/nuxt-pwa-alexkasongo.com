@@ -2,15 +2,15 @@
 * LINKS
 */
 a {
-    text-decoration: none;
-    @include para($chartreuse);
+  text-decoration: none;
+  @include custom-text($color: $chartreuse, $size: 20px);
 }
 
 a:focus {
-    outline: none;
+  outline: none;
 }
 
 a:active {
-    position: relative;
-    top: 1px;
+  position: relative;
+  top: 1px;
 }

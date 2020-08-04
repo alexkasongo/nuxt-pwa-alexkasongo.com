@@ -1,0 +1,12 @@
+.footer {
+  @include flexbox;
+  @include justify-content(space-between);
+  @include align-items(flex-end);
+
+  &__logo {
+    width: 100px;
+  }
+  &__ul {
+    @include flexbox;
+  }
+}

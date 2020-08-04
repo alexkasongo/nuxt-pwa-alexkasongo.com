@@ -1,0 +1,10 @@
+.gallery {
+  @include flexbox;
+  @include flex-direction(column);
+
+  &__item {
+    img {
+      width: 350px;
+    }
+  }
+}

@@ -7,12 +7,15 @@
         backgroundImage: 'url(' + banner.image.url + ')'
       }"
     ></div>
+
     <!-- Template for page title. -->
     <h2 class="banner-title">
       {{ $prismic.asText(banner.title) }}
     </h2>
+
     <!-- Template for page tagline. -->
     <p class="banner-description">{{ $prismic.asText(banner.tagline) }}</p>
+
     <prismic-link class="banner-button" :field="banner.button_link">
       {{ $prismic.asText(banner.button_label) }}
     </prismic-link>
