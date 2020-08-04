@@ -1,5 +1,5 @@
 <template>
-  <div class="homepage">
+  <div class="homepage page">
     <header-prismic />
     <nuxt />
     <footer-prismic />
