@@ -133,6 +133,23 @@
   @media (min-width: $large-desktop) {
   }
 }
+@mixin custom-text(
+  $color: $primary-font-color,
+  $family: $Light-font,
+  $size: 16px
+) {
+  color: $color;
+  font-family: $family;
+  font-size: $size;
+  @media (min-width: $mobile) {
+  }
+  @media (min-width: $tablet) {
+  }
+  @media (min-width: $small-desktop) {
+  }
+  @media (min-width: $large-desktop) {
+  }
+}
 
 /*
 * Shared styling
