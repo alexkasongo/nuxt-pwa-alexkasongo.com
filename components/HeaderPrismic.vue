@@ -9,7 +9,7 @@
     <nuxt-link to="/" class="logo">{{
       $prismic.asText($store.state.menu.title)
     }}</nuxt-link>
-    <nuxt-link to="/archive" class="logo">Archive</nuxt-link>
+
     <nav>
       <ul class="site-header__ul">
         <li v-for="menuLink in $store.state.menu.menu_links" :key="menuLink.id">

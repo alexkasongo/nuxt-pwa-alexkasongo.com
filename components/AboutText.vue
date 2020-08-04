@@ -1,11 +1,13 @@
 <template>
-  <div data-v-a8d282dc="" class="text-slice text-section-null">
-    <p>Hi, my name is Alex</p>
-    <p>I’m a front-end engineer</p>
-    <p>passionate for the web</p>
-    <p>responsive design,</p>
-    <p>&amp; typography</p>
-    <p></p>
+  <div class="about">
+    <p class="about__text">Hi, my name is Alex</p>
+    <p class="about__text">I’m a front-end engineer</p>
+    <p class="about__text">passionate for the web</p>
+    <p class="about__text">responsive design,</p>
+    <p class="about__text">&amp; typography</p>
+    <p class="about__text">
+      <nuxt-link to="/archive" class="logo">Archive</nuxt-link>
+    </p>
   </div>
 </template>
 
