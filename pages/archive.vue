@@ -1,5 +1,7 @@
 <template>
-  <h1>Archive Page Works</h1>
+  <div class="">
+    <h1>Archive Page Works</h1>
+  </div>
 </template>
 
 <script>
