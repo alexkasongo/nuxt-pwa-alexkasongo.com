@@ -8,11 +8,13 @@
 
 <script>
 import HeaderPrismic from "~/components/HeaderPrismic.vue";
+import AboutText from "~/components/AboutText.vue";
 import FooterPrismic from "~/components/FooterPrismic.vue";
 
 export default {
   components: {
     HeaderPrismic,
+    AboutText,
     FooterPrismic
   },
   head() {
