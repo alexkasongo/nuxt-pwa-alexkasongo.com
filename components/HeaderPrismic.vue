@@ -13,7 +13,7 @@
     <nav>
       <ul class="site-header__ul">
         <li v-for="menuLink in $store.state.menu.menu_links" :key="menuLink.id">
-          <prismic-link :field="menuLink.link">{{
+          <prismic-link :style="activeColor" :field="menuLink.link">{{
             $prismic.asText(menuLink.label)
           }}</prismic-link>
         </li>
@@ -24,7 +24,19 @@
 
 <script>
 export default {
-  name: "header-prismic"
+  name: "header-prismic",
+  data() {
+    return {
+      test: "Aleko 👨🏾‍💻",
+      activeColor: ""
+    };
+  },
+  mounted() {
+    console.log(`HeaderPrismic.vue - 29 - 🌱`, this.$route);
+    if (this.$route.fullPath === "/page/blog") {
+      this.activeColor = "backgroundColor: #8efe11;";
+    }
+  }
 };
 </script>
 

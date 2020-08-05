@@ -2,8 +2,17 @@
 * LINKS
 */
 a {
+  background-image: linear-gradient(to top, $chartreuse 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: top;
+  transition: background-position 0.2s ease-in-out;
   text-decoration: none;
-  @include custom-text($color: $chartreuse, $size: 20px);
+  padding: 0 5px;
+  @include custom-text($color: $mine-shaft, $size: 20px);
+}
+
+a:hover {
+  background-position: bottom;
 }
 
 a:focus {
