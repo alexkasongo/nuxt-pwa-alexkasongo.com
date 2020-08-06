@@ -13,7 +13,7 @@
     <nav>
       <ul class="site-header__ul">
         <li v-for="menuLink in $store.state.menu.menu_links" :key="menuLink.id">
-          <prismic-link :style="activeColor" :field="menuLink.link">{{
+          <prismic-link :style="setActiveColor" :field="menuLink.link">{{
             $prismic.asText(menuLink.label)
           }}</prismic-link>
         </li>
@@ -27,14 +27,27 @@ export default {
   name: "header-prismic",
   data() {
     return {
-      test: "Aleko 👨🏾‍💻",
-      activeColor: ""
+      ActiveRouteName: "",
+      setActiveColor: ""
     };
   },
-  mounted() {
-    console.log(`HeaderPrismic.vue - 29 - 🌱`, this.$route);
-    if (this.$route.fullPath === "/page/blog") {
-      this.activeColor = "backgroundColor: #8efe11;";
+  created() {
+    this.setActiveRouteName();
+  },
+  methods: {
+    setActiveRouteName() {
+      // set active route name
+      this.ActiveRouteName = this.$route.fullPath;
+      // set active color if active route name is the same as the route name
+      if (this.ActiveRouteName === "/page/blog") {
+        this.setActiveColor = "backgroundColor: #8efe11;";
+      }
+    }
+  },
+  watch: {
+    // keep watch of route changes to and from.
+    $route(to, from) {
+      this.setActiveRouteName();
     }
   }
 };
