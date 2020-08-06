@@ -1,10 +1,16 @@
 .about {
   &__text {
-    @include custom-text($size: 30px);
+    @include custom-text($size: 24px);
     text-align: center;
+    @media (min-width: $mobile) {
+      @include custom-text($size: 30px);
+    }
   }
   &__link {
-    @include custom-text($size: 30px);
+    @include custom-text($size: 24px);
     background-position: center;
+    @media (min-width: $mobile) {
+      @include custom-text($size: 30px);
+    }
   }
 }
