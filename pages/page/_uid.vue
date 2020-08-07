@@ -12,11 +12,11 @@ import SlicesBlock from "~/components/SlicesBlock.vue";
 export default {
   name: "page",
   components: {
-    SlicesBlock
+    SlicesBlock,
   },
   head() {
     return {
-      title: "Codalac Multi Page Website"
+      title: "Codalac Multi Page Website",
     };
   },
   async asyncData({ $prismic, params, error }) {
@@ -26,12 +26,12 @@ export default {
 
       return {
         // Set slices as variable
-        slices: document.page_content
+        slices: document.page_content,
       };
     } catch (e) {
       // Returns error page
       error({ statusCode: 404, message: "Page not found" });
     }
-  }
+  },
 };
 </script>

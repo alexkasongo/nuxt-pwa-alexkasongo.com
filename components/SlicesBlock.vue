@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class>
     <!-- Slice section template -->
     <section v-for="(slice, index) in slices" :key="'slice-' + index">
       <!-- Text slice component -->
@@ -18,6 +18,10 @@
       <template v-else-if="slice.slice_type === 'image_gallery'">
         <image-gallery :slice="slice" />
       </template>
+      <!-- Project Gallery slice component -->
+      <template v-else-if="slice.slice_type === 'image_gallery1'">
+        <project-gallery :slice="slice" />
+      </template>
       <!-- Image Highlight slice component -->
       <template v-else-if="slice.slice_type === 'image_highlight'">
         <image-highlight :slice="slice" />
@@ -32,6 +36,7 @@ const TextSlice = () => import("./slices/TextSlice.vue");
 const QuoteSlice = () => import("./slices/QuoteSlice.vue");
 const FullWidthImage = () => import("./slices/FullWidthImage.vue");
 const ImageGallery = () => import("./slices/ImageGallery.vue");
+const ProjectGallery = () => import("./slices/ProjectGallery.vue");
 const ImageHighlight = () => import("./slices/ImageHighlight.vue");
 
 export default {
@@ -42,7 +47,8 @@ export default {
     QuoteSlice,
     FullWidthImage,
     ImageGallery,
-    ImageHighlight
-  }
+    ProjectGallery,
+    ImageHighlight,
+  },
 };
 </script>

@@ -3,20 +3,20 @@
 */
 html,
 body {
-    @include clearfix;
-    background-color: $body-background;
-    font-family: $primary-font;
-    min-height: 100%;
-    overflow-x: hidden;
-    @include box-sizing(border-box);
+  @include clearfix;
+  background-color: $body-background;
+  font-family: $primary-font;
+  min-height: 100%;
+  overflow-x: hidden;
+  @include box-sizing(border-box);
 }
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 *:focus {
-    outline-color: grey;
-    outline-style: solid;
-    outline-width: thin;
+  outline-color: grey;
+  outline-style: solid;
+  outline-width: thin;
 }

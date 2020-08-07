@@ -1,7 +1,11 @@
 .footer {
+  bottom: 0;
+  @include absolute;
   @include flexbox;
   @include justify-content(space-between);
-  @include align-items(flex-end);
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
 
   &__logo {
     width: 100px;
