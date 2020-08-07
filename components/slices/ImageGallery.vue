@@ -5,11 +5,11 @@
       <div v-for="item in slice.items" :key="item.id" class="gallery__item">
         <prismic-image :field="item.image" />
         <prismic-rich-text :field="item.image_description" />
-        <p>
-          <prismic-link :field="item.link" class="gallery-link">{{
-            $prismic.asText(item.link_label)
-          }}</prismic-link>
-        </p>
+        <prismic-link :field="item.link" class="gallery-link">
+          {{
+          $prismic.asText(item.link_label)
+          }}
+        </prismic-link>
       </div>
     </div>
   </section>
@@ -18,7 +18,7 @@
 <script>
 export default {
   props: ["slice"],
-  name: "image-gallery"
+  name: "image-gallery",
 };
 </script>
 

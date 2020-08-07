@@ -33,7 +33,7 @@
       height: 100%;
       object-fit: cover;
       border-radius: 2px;
-      filter: brightness(0.5) grayscale(100);
+      filter: brightness(0.3) grayscale(100);
       transition: 0.3s ease-in-out;
     }
     img:hover {
@@ -57,12 +57,17 @@
   }
   &__item:nth-child(8n + 9) {
     grid-column-start: span 1;
-    grid-row-start: span 3;
+    grid-row-start: span 1;
   }
-  p {
+  a {
     position: absolute;
-    top: 0;
-    left: 5px;
+    position: absolute;
+    top: 50%; /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
     color: $chartreuse;
+  }
+  a:hover {
+    color: $black;
   }
 }
