@@ -3,21 +3,19 @@
     <p
       v-if="$store.state.menu === 'Please create a menu document'"
       class="logo"
-    >
-      {{ $store.state.menu }}
-    </p>
-    <nuxt-link to="/" class="logo">{{
+    >{{ $store.state.menu }}</p>
+    <nuxt-link to="/" class="logo">
+      {{
       $prismic.asText($store.state.menu.title)
-    }}</nuxt-link>
+      }}
+    </nuxt-link>
 
     <nav>
-      <ul class="site-header__ul">
-        <li v-for="menuLink in $store.state.menu.menu_links" :key="menuLink.id">
-          <prismic-link :style="setActiveColor" :field="menuLink.link">{{
-            $prismic.asText(menuLink.label)
-          }}</prismic-link>
-        </li>
-      </ul>
+      <prismic-link :style="setActiveColor" :field="$store.state.menu.menu_links[0].link">
+        {{
+        $store.state.menu.menu_links[0].link.slug
+        }}
+      </prismic-link>
     </nav>
   </header>
 </template>
@@ -28,7 +26,7 @@ export default {
   data() {
     return {
       ActiveRouteName: "",
-      setActiveColor: ""
+      setActiveColor: "",
     };
   },
   created() {
@@ -42,14 +40,14 @@ export default {
       if (this.ActiveRouteName === "/page/blog") {
         this.setActiveColor = "backgroundColor: #8efe11;";
       }
-    }
+    },
   },
   watch: {
     // keep watch of route changes to and from.
     $route(to, from) {
       this.setActiveRouteName();
-    }
-  }
+    },
+  },
 };
 </script>
 
