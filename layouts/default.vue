@@ -1,5 +1,6 @@
 <template>
-  <div class="default page">
+  <div class="default">
+    <!-- remove header and add logo which navigates user back home -->
     <header-prismic />
     <nuxt />
     <footer-prismic />
@@ -15,16 +16,16 @@ export default {
   components: {
     HeaderPrismic,
     AboutText,
-    FooterPrismic
+    FooterPrismic,
   },
   head() {
     return {
-      title: "Prismic Nuxt.js Multi Page Website"
+      title: "Prismic Nuxt.js Multi Page Website",
     };
   },
   // Called before rendering the layout (even for error page)
   async middleware({ store, $prismic }) {
     await store.dispatch("fetchMenu", $prismic);
-  }
+  },
 };
 </script>
