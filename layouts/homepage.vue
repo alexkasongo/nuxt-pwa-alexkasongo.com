@@ -1,7 +1,7 @@
 <template>
   <div class="homepage page">
     <header-prismic />
-    <button class="mode-toggle">enable dark mode</button>
+    <!-- <button class="mode-toggle">enable dark mode</button> -->
     <ColorModePicker />
     <about-text />
     <footer-prismic />

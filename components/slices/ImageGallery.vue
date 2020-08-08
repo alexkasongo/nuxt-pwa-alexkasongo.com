@@ -8,9 +8,7 @@
         <prismic-image :field="item.image" />
         <prismic-rich-text :field="item.image_description" />
         <prismic-link :field="item.link" class="gallery-link">
-          {{
-          $prismic.asText(item.link_label)
-          }}
+          {{ $prismic.asText(item.link_label) }}
         </prismic-link>
       </div>
     </div>
@@ -20,7 +18,7 @@
 <script>
 export default {
   props: ["slice"],
-  name: "image-gallery",
+  name: "image-gallery"
 };
 </script>
 

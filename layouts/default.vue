@@ -2,7 +2,7 @@
   <div class="default">
     <!-- remove header and add logo which navigates user back home -->
     <header-prismic />
-    <button class="mode-toggle">enable dark mode</button>
+    <!-- <button class="mode-toggle">enable dark mode</button> -->
     <nuxt />
     <footer-prismic />
   </div>
@@ -17,11 +17,11 @@ export default {
   components: {
     HeaderPrismic,
     AboutText,
-    FooterPrismic,
+    FooterPrismic
   },
   head() {
     return {
-      title: "Prismic Nuxt.js Multi Page Website",
+      title: "Prismic Nuxt.js Multi Page Website"
     };
   },
   // Called before rendering the layout (even for error page)
@@ -30,11 +30,11 @@ export default {
   },
   data() {
     return {
-      clicked: false,
+      clicked: false
     };
   },
   methods: {
-    toggleMode: function () {
+    toggleMode: function() {
       var body = document.querySelector("body");
       var galleryTitle = document.querySelector(".gallery-title");
 
@@ -49,9 +49,8 @@ export default {
         galleryTitle.style.cssText = "color:black; transition: 1s ease-in;";
         this.clicked = false;
       }
-    },
-  },
+    }
+  }
 };
 </script>
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>
