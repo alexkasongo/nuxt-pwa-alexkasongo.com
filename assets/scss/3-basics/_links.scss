@@ -8,7 +8,7 @@ a {
   transition: background-position 0.2s ease-in-out;
   text-decoration: none;
   padding: 0 5px;
-  @include custom-text($color: $mine-shaft, $size: 20px);
+  @include custom-text($size: 20px);
 }
 
 a:hover {

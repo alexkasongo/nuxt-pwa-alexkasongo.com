@@ -61,7 +61,9 @@ export default {
     // https://prismic-nuxt.js.org/
     "@nuxtjs/prismic",
     // styles
-    "@nuxtjs/style-resources"
+    "@nuxtjs/style-resources",
+    // dark mode
+    ["@nuxtjs/color-mode"]
   ],
   styleResources: {
     scss: ["./assets/scss/*.scss"]
