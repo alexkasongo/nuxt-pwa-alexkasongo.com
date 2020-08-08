@@ -2,6 +2,7 @@
   <div class="default">
     <!-- remove header and add logo which navigates user back home -->
     <header-prismic />
+    <button class="mode-toggle">enable dark mode</button>
     <nuxt />
     <footer-prismic />
   </div>
@@ -29,3 +30,5 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped>
+</style>

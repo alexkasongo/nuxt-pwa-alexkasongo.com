@@ -1,6 +1,8 @@
 <template>
   <section class="image-gallery content-section">
-    <prismic-rich-text :field="slice.primary.project_title" />
+    <div class="gallery-title">
+      <prismic-rich-text :field="slice.primary.project_title" />
+    </div>
     <div class="gallery">
       <div v-for="item in slice.items" :key="item.id" class="gallery__item">
         <prismic-image :field="item.project_image" />

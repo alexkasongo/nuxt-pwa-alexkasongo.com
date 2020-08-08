@@ -1,6 +1,7 @@
 <template>
   <div class="homepage page">
     <header-prismic />
+    <button class="mode-toggle">enable dark mode</button>
     <about-text />
     <footer-prismic />
   </div>
@@ -15,16 +16,16 @@ export default {
   components: {
     HeaderPrismic,
     AboutText,
-    FooterPrismic
+    FooterPrismic,
   },
   head() {
     return {
-      title: "Prismic Nuxt.js Multi Page Website"
+      title: "Prismic Nuxt.js Multi Page Website",
     };
   },
   // Called before rendering the layout (even for error page)
   async middleware({ store, $prismic }) {
     await store.dispatch("fetchMenu", $prismic);
-  }
+  },
 };
 </script>
