@@ -2,7 +2,7 @@
   <div class="default">
     <!-- remove header and add logo which navigates user back home -->
     <header-prismic />
-    <button class="mode-toggle" @click="toggleMode">enable dark mode</button>
+    <button class="mode-toggle">enable dark mode</button>
     <nuxt />
     <footer-prismic />
   </div>
