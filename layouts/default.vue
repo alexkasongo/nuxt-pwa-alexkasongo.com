@@ -2,7 +2,7 @@
   <div class="default">
     <!-- remove header and add logo which navigates user back home -->
     <header-prismic />
-    <button class="mode-toggle">enable dark mode</button>
+    <button class="mode-toggle" @click="toggleMode">enable dark mode</button>
     <nuxt />
     <footer-prismic />
   </div>
@@ -27,6 +27,29 @@ export default {
   // Called before rendering the layout (even for error page)
   async middleware({ store, $prismic }) {
     await store.dispatch("fetchMenu", $prismic);
+  },
+  data() {
+    return {
+      clicked: false,
+    };
+  },
+  methods: {
+    toggleMode: function () {
+      var body = document.querySelector("body");
+      var galleryTitle = document.querySelector(".gallery-title");
+
+      if (this.clicked === false) {
+        body.style.cssText =
+          "background-color:black; transition: 0.8s ease-in-out;";
+        galleryTitle.style.cssText =
+          "color:white; transition: 0.8s ease-in-out;";
+        this.clicked = true;
+      } else {
+        body.style.cssText = "background-color:white; transition: 1s ease-in;";
+        galleryTitle.style.cssText = "color:black; transition: 1s ease-in;";
+        this.clicked = false;
+      }
+    },
   },
 };
 </script>
