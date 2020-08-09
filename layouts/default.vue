@@ -3,6 +3,7 @@
     <!-- remove header and add logo which navigates user back home -->
     <header-prismic />
     <!-- <button class="mode-toggle">enable dark mode</button> -->
+    <ColorModePicker id="clip" />
     <nuxt />
     <footer-prismic />
   </div>
@@ -12,12 +13,14 @@
 import HeaderPrismic from "~/components/HeaderPrismic.vue";
 import AboutText from "~/components/AboutText.vue";
 import FooterPrismic from "~/components/FooterPrismic.vue";
+import ColorModePicker from "~/components/ColorModePicker.vue";
 
 export default {
   components: {
     HeaderPrismic,
     AboutText,
-    FooterPrismic
+    FooterPrismic,
+    ColorModePicker
   },
   head() {
     return {
@@ -53,4 +56,12 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+// #clip {
+//   background-color: $beryl-green;
+
+//   background-attachment: fixed;
+//   -webkit-text-fill-color: transparent;
+//   -webkit-background-clip: text;
+// }
+</style>

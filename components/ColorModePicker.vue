@@ -45,26 +45,28 @@ export default {
   position: fixed;
   left: 20px;
   top: 4rem;
-  height: 72px;
+  height: 90px;
   z-index: 2;
   &__click {
     cursor: pointer;
     width: max-content;
-    @include para;
+    @include custom-text($size: 20px);
   }
 }
 
 .preferred {
-  transition: 2s ease-in-out;
+  transition: 0.3s ease-in;
 }
 .selected {
-  transition: 2s ease-in-out;
+  transition: 0.3s ease-in;
 }
 
 .preferred::after {
   content: "●";
+  color: var(--color-primary);
 }
 .selected::after {
   content: "←";
+  color: var(--color-primary);
 }
 </style>
