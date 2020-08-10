@@ -12,8 +12,8 @@
     }
   }
   &__link {
+    cursor: default;
     @include custom-text($size: 24px);
-    background-position: center;
     @media (min-width: $mobile) {
       @include custom-text($size: 30px);
     }

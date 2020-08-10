@@ -36,7 +36,7 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: "#fff" },
+  loading: { color: "#8efe11" },
 
   /*
    ** Global CSS
@@ -61,7 +61,9 @@ export default {
     // https://prismic-nuxt.js.org/
     "@nuxtjs/prismic",
     // styles
-    "@nuxtjs/style-resources"
+    "@nuxtjs/style-resources",
+    // dark mode
+    ["@nuxtjs/color-mode"]
   ],
   styleResources: {
     scss: ["./assets/scss/*.scss"]
