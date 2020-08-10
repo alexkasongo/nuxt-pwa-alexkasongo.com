@@ -43,7 +43,7 @@ export default {
     },
   },
   watch: {
-    // keep watch of route changes to and from.
+    // keep watch of route changes to and from. Us this to set active background color of current page
     $route(to, from) {
       this.setActiveRouteName();
     },
