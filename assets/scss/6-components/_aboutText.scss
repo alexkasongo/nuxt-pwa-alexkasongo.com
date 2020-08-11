@@ -18,4 +18,8 @@
       @include custom-text($size: 30px);
     }
   }
+  &__link:hover {
+    // color: $primary-font-color;
+    color: $wedgewood;
+  }
 }
