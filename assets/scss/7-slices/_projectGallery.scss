@@ -8,7 +8,6 @@
   @media (min-width: $mobile) {
     display: grid;
     grid-template-columns: auto auto;
-    // grid-gap: 1px;
     grid-auto-flow: dense;
   }
   @media (min-width: $tablet) {
