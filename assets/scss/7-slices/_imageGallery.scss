@@ -40,6 +40,13 @@
     img:hover {
       filter: brightness(1) grayscale(0);
     }
+    a {
+      div {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+      }
+    }
   }
   &__item:first-child {
     grid-column-start: span 2;
@@ -58,17 +65,6 @@
   &__item:nth-child(8n + 9) {
     grid-column-start: span 1;
     grid-row-start: span 1;
-  }
-  a {
-    position: absolute;
-    position: absolute;
-    top: 50%; /* position the top  edge of the element at the middle of the parent */
-    left: 50%; /* position the left edge of the element at the middle of the parent */
-    transform: translate(-50%, -50%);
-    color: $chartreuse;
-  }
-  a:hover {
-    color: $black;
   }
 }
 
