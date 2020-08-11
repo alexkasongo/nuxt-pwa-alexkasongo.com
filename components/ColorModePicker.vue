@@ -45,6 +45,8 @@ export default {
         this.ActiveRouteName === "/page/blog"
       ) {
         this.setActiveColor = "backgroundColor: #000;";
+      } else {
+        this.setActiveColor = "";
       }
     },
   },
@@ -70,7 +72,7 @@ export default {
     cursor: pointer;
     width: max-content;
     @include custom-text-two($size: 20px);
-    margin: 0 5px 0 0;
+    margin: 0 0px 0 5px;
     padding: 10px 0 0 5px;
   }
 }

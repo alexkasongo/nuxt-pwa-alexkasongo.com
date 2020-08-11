@@ -1,7 +1,6 @@
 <template>
   <div class="homepage page">
     <header-prismic />
-    <!-- <button class="mode-toggle">enable dark mode</button> -->
     <ColorModePicker />
     <about-text />
     <footer-prismic />
@@ -19,12 +18,12 @@ export default {
     HeaderPrismic,
     AboutText,
     FooterPrismic,
-    ColorModePicker
+    ColorModePicker,
   },
   head() {
     return {
       title: "Prismic Nuxt.js Multi Page Website",
-      clicked: false
+      clicked: false,
     };
   },
   // Called before rendering the layout (even for error page)
@@ -33,11 +32,11 @@ export default {
   },
   data() {
     return {
-      clicked: false
+      clicked: false,
     };
   },
   methods: {
-    toggleMode: function() {
+    toggleMode: function () {
       var body = document.querySelector("body");
       var text = document.querySelector(".about__text");
 
@@ -60,7 +59,7 @@ export default {
         }
         this.clicked = false;
       }
-    }
-  }
+    },
+  },
 };
 </script>

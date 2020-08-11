@@ -10,7 +10,7 @@
     transform: rotate(180deg);
     position: fixed;
     left: 20px;
-    top: 4rem;
+    top: 50%;
     @include button;
     @include color($chartreuse);
     z-index: 2;
