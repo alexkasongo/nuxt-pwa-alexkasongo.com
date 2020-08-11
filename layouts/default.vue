@@ -2,7 +2,7 @@
   <div class="default">
     <!-- remove header and add logo which navigates user back home -->
     <header-prismic />
-    <button class="mode-toggle">enable dark mode</button>
+    <button class="mode-toggle" @click="$router.go(-1)">click to go back</button>
     <ColorModePicker id="clip" />
     <nuxt />
     <footer-prismic />

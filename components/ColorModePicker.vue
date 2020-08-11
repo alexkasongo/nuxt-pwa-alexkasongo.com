@@ -89,7 +89,7 @@ export default {
   color: var(--color-primary);
 }
 .selected::after {
-  content: "←";
+  content: "●";
   color: var(--color-primary);
 }
 </style>

@@ -10,9 +10,16 @@
     transform: rotate(180deg);
     position: fixed;
     left: 20px;
-    top: 4rem;
+    top: 35%;
     @include button;
-    @include color($chartreuse);
+    // @include color($chartreuse);
+    background-color: #000;
+    color: var(--color-primary);
+    padding: 5px;
     z-index: 2;
+  }
+  .mode-toggle::before {
+    content: "←";
+    margin: 0 0 10px 0;
   }
 }
