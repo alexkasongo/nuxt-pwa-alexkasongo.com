@@ -7,12 +7,10 @@
         :key="color"
         @click="$colorMode.preference = color"
         :class="getClasses(color)"
-      >
-        {{ color }}
-      </li>
+      >{{ color }}</li>
       <!-- <ColorScheme placeholder="..." tag="span">
         Color mode: <b>{{ $colorMode.preference }}</b>
-      </ColorScheme> -->
+      </ColorScheme>-->
     </ul>
   </div>
 </template>
@@ -20,7 +18,7 @@
 export default {
   data() {
     return {
-      colors: ["system", "light", "dark", "sepia"]
+      colors: ["system", "light", "dark", "sepia"],
     };
   },
   methods: {
@@ -31,10 +29,10 @@ export default {
       }
       return {
         preferred: color === this.$colorMode.preference,
-        selected: color === this.$colorMode.value
+        selected: color === this.$colorMode.value,
       };
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -50,7 +48,7 @@ export default {
   &__click {
     cursor: pointer;
     width: max-content;
-    @include custom-text($size: 20px);
+    @include custom-text-two($size: 20px);
   }
 }
 

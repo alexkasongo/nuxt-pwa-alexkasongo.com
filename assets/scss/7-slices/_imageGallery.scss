@@ -45,6 +45,9 @@
         position: absolute;
         top: 50%;
         right: 20px;
+        p {
+          @include custom-text-two();
+        }
       }
     }
   }
