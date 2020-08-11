@@ -2,17 +2,16 @@
   <div class="color-mode">
     <ul class="color-mode__modes">
       <li
+        :style="setActiveColor"
         class="color-mode__click"
         v-for="color of colors"
         :key="color"
         @click="$colorMode.preference = color"
         :class="getClasses(color)"
-      >
-        {{ color }}
-      </li>
+      >{{ color }}</li>
       <!-- <ColorScheme placeholder="..." tag="span">
         Color mode: <b>{{ $colorMode.preference }}</b>
-      </ColorScheme> -->
+      </ColorScheme>-->
     </ul>
   </div>
 </template>
@@ -20,8 +19,11 @@
 export default {
   data() {
     return {
-      colors: ["system", "light", "dark", "sepia"]
+      colors: ["system", "light", "dark", "sepia"],
     };
+  },
+  created() {
+    this.setActiveRouteName();
   },
   methods: {
     getClasses(color) {
@@ -31,10 +33,27 @@ export default {
       }
       return {
         preferred: color === this.$colorMode.preference,
-        selected: color === this.$colorMode.value
+        selected: color === this.$colorMode.value,
       };
-    }
-  }
+    },
+    setActiveRouteName() {
+      // set active route name
+      this.ActiveRouteName = this.$route.fullPath;
+      // set active color if active route name is the same as the route name
+      if (
+        this.ActiveRouteName === "/page/archive" ||
+        this.ActiveRouteName === "/page/archive"
+      ) {
+        this.setActiveColor = "backgroundColor: #000;";
+      }
+    },
+  },
+  watch: {
+    // keep watch of route changes to and from. Us this to set active background color of current page
+    $route(to, from) {
+      this.setActiveRouteName();
+    },
+  },
 };
 </script>
 
@@ -50,7 +69,9 @@ export default {
   &__click {
     cursor: pointer;
     width: max-content;
-    @include custom-text($size: 20px);
+    @include custom-text-two($size: 20px);
+    margin: 0 5px 0 0;
+    padding: 10px 0 0 5px;
   }
 }
 
