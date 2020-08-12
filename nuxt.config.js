@@ -90,5 +90,9 @@ export default {
 
   generate: {
     fallback: "404.html" // Netlify reads a 404.html, Nuxt will load as an SPA
+  },
+  server: {
+    port: 3000, // default: 3000
+    host: "0.0.0.0" // default: localhost
   }
 };
