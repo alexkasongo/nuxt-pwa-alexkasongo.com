@@ -33,6 +33,11 @@ export default {
       }
     ]
   },
+  pwa: {
+    manifest: {
+      name: "Alex Kasongo"
+    }
+  },
 
   /*
    ** Customize the progress-bar color
