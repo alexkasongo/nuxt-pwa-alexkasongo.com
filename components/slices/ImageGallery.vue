@@ -11,7 +11,7 @@
         </prismic-link>
         <!-- <prismic-link :field="item.link" class="gallery-link">
           {{ $prismic.asText(item.link_label) }}
-        </prismic-link> -->
+        </prismic-link>-->
       </div>
     </div>
   </section>
@@ -20,7 +20,7 @@
 <script>
 export default {
   props: ["slice"],
-  name: "image-gallery"
+  name: "image-gallery",
 };
 </script>
 
