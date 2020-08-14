@@ -42,7 +42,7 @@ export default {
       // set active color if active route name is the same as the route name
       if (
         this.ActiveRouteName === "/page/archive" ||
-        this.ActiveRouteName === "/page/blog"
+        this.ActiveRouteName === "/page/me"
       ) {
         this.setActiveColor = "backgroundColor: #000;";
       } else {
