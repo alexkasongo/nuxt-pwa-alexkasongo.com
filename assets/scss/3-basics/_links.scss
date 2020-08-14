@@ -7,7 +7,6 @@ a {
   background-position: top;
   transition: background-position 0.2s ease-in-out;
   text-decoration: none;
-  padding: 0 5px;
   @include custom-text($size: 20px);
 }
 

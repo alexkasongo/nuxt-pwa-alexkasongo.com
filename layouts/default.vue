@@ -2,8 +2,8 @@
   <div class="default">
     <!-- remove header and add logo which navigates user back home -->
     <header-prismic />
-    <button class="mode-toggle" @click="$router.go(-1)">click to go back</button>
     <ColorModePicker id="clip" />
+    <BackButton />
     <nuxt />
     <footer-prismic />
   </div>
@@ -14,6 +14,7 @@ import HeaderPrismic from "~/components/HeaderPrismic.vue";
 import AboutText from "~/components/AboutText.vue";
 import FooterPrismic from "~/components/FooterPrismic.vue";
 import ColorModePicker from "~/components/ColorModePicker.vue";
+import BackButton from "~/components/BackButton.vue";
 
 export default {
   components: {
@@ -21,6 +22,7 @@ export default {
     AboutText,
     FooterPrismic,
     ColorModePicker,
+    BackButton,
   },
   head() {
     return {
