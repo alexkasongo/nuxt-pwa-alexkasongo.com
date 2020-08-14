@@ -19,7 +19,7 @@ export default {
   transform: rotate(180deg);
   position: fixed;
   left: 20px;
-  top: 40vh;
+  top: 50vh;
   @include button;
   background-color: #000;
   color: var(--color-primary);
