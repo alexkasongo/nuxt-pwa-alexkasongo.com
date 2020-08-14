@@ -18,11 +18,21 @@ export default {
   layout: "homepage",
   components: {
     HomepageBanner,
-    SlicesBlock
+    SlicesBlock,
+  },
+  data() {
+    return {
+      title: "Alex Kasongo",
+      description:
+        "Hi, my name is Alex Kasongo. I am a front-end engineer, passionate for the web, responsive design & typography",
+    };
   },
   head() {
     return {
-      title: "Codalac Multi Page Website"
+      title: this.title,
+      meta: [
+        { hid: "description", name: "description", content: this.description },
+      ],
     };
   },
   async asyncData({ $prismic, error }) {
@@ -34,11 +44,11 @@ export default {
         // Page content
         banner: homepage.homepage_banner[0],
         // Set slices as variable
-        slices: homepage.page_content
+        slices: homepage.page_content,
       };
     } catch (e) {
       error({ statusCode: 404, message: "Page not found" });
     }
-  }
+  },
 };
 </script>

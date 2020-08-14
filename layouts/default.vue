@@ -24,9 +24,19 @@ export default {
     ColorModePicker,
     BackButton,
   },
+  data() {
+    return {
+      title: "Alex Kasongo",
+      description:
+        "Hi, my name is Alex Kasongo. I am a front-end engineer, passionate for the web, responsive design & typography",
+    };
+  },
   head() {
     return {
-      title: "Prismic Nuxt.js Multi Page Website",
+      title: this.title,
+      meta: [
+        { hid: "description", name: "description", content: this.description },
+      ],
     };
   },
   // Called before rendering the layout (even for error page)
