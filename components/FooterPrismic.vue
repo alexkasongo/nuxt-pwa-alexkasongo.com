@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <a href="https://instagram.com/alexkasongo" target="_blank" rel="noopener">instagram</a>
-    <a href="https://github.com/alexkasongo" target="_blank" rel="noopener">email</a>
+    <a href="alex-kasongo-resume.pdf" target="_blank" rel="noopener">resume</a>
   </footer>
 </template>
 
