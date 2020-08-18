@@ -23,7 +23,6 @@ export default {
   @include button;
   background-color: #000;
   color: var(--color-primary);
-  //   padding: 15px 5px;
   z-index: 2;
 }
 .mode-toggle::before {
