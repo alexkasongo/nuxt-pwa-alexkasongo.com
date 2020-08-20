@@ -9,9 +9,6 @@
         @click="$colorMode.preference = color"
         :class="getClasses(color)"
       >{{ color }}</li>
-      <!-- <ColorScheme placeholder="..." tag="span">
-        Color mode: <b>{{ $colorMode.preference }}</b>
-      </ColorScheme>-->
     </ul>
   </div>
 </template>
