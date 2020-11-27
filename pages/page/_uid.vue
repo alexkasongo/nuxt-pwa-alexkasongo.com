@@ -18,7 +18,7 @@ export default {
     return {
       title: "Alex Kasongo",
       description:
-        "Hi, my name is Alex Kasongo. I am a front-end engineer, passionate for the web, responsive design & typography",
+        "Hi, my name is Alex Kasongo. I am a front-end engineer, passionate for the web & solution archicture",
     };
   },
   head() {

@@ -13,18 +13,12 @@
       <a class="about__link" href="#">web</a>,
     </p>
     <p class="about__text">
-      responsive
-      <a class="about__link" href="#">design</a>,
-    </p>
-    <p class="about__text">
       &amp;
-      <a class="about__link" href="#">typography</a>
+      <a class="about__link" href="#">solution archicture</a>
     </p>
     <p class="about__text">
       <prismic-link :field="$store.state.menu.menu_links[1].link">
-        {{
-        $store.state.menu.menu_links[1].link.uid
-        }}
+        {{ $store.state.menu.menu_links[1].link.uid }}
       </prismic-link>
     </p>
   </div>
