@@ -8,7 +8,9 @@
         :key="color"
         @click="$colorMode.preference = color"
         :class="getClasses(color)"
-      >{{ color }}</li>
+      >
+        {{ color }}
+      </li>
     </ul>
   </div>
 </template>
@@ -24,7 +26,7 @@ export default {
   },
   methods: {
     getClasses(color) {
-      // Does not set classes on ssr when preference is system (because we don't know the preference until client-side)
+      // Does not set classes on SSR when preference is system (because we don't know the preference until client-side)
       if (this.$colorMode.unknown) {
         return {};
       }
