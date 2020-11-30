@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     getClasses(color) {
-      // Does not set classes on SSR when preference is system (because we don't know the preference until client-side)
+      // Does not set classes on SSR when preference is system (because we don't know the preference until client-side loads)
       if (this.$colorMode.unknown) {
         return {};
       }
