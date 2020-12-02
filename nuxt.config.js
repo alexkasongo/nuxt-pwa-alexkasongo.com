@@ -102,7 +102,13 @@ export default {
       config.resolve.alias["vue"] = "vue/dist/vue.common";
     }
   },
-
+  buildModules: [
+    '@nuxtjs/ngrok',
+  ],
+  ngrok: {
+    // module options
+    ngrokauth: process.env.NGROK_AUTH
+  },
   generate: {
     fallback: true // Netlify reads a 404.html, Nuxt will load as an SPA
   }
