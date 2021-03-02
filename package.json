@@ -14,6 +14,7 @@
   "dependencies": {
     "@nuxtjs/ngrok": "^2.0.0",
     "@nuxtjs/prismic": "^1.2.3",
+    "@prismicio/vue": "^2.0.7",
     "cookies": "^0.8.0",
     "nuxt": "^2.14.0",
     "prismic-javascript": "^2.7.1",
