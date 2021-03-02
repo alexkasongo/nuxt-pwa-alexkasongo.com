@@ -20,12 +20,16 @@
 <script>
 export default {
   props: ["slice"],
-  name: "image-gallery",
+  name: "image-gallery"
 };
 </script>
 
 <style lang="scss" scoped>
 a {
   background: none;
+}
+.gallery {
+  display: flex;
+  flex-direction: column;
 }
 </style>

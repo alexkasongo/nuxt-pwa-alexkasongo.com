@@ -48,7 +48,7 @@ export default {
     FullWidthImage,
     ImageGallery,
     ProjectGallery,
-    ImageHighlight,
-  },
+    ImageHighlight
+  }
 };
 </script>
