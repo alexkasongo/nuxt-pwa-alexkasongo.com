@@ -50,14 +50,4 @@ export default {
 //   font-size: 70px
 //   font-weight: 900
 //   line-height: 70px
-
-// .banner-button
-//   background: #ffffff
-//   border-radius: 7px
-//   color: #484D52
-//   font-size: 14px
-//   font-weight: 700
-//   padding: 15px 40px
-//   &:hover
-//     background: #c8c9cb
 </style>
