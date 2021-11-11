@@ -41,7 +41,7 @@ export default {
 
 // .banner-title, .banner-description
 //   width: 90%
-//   max-width: 490px //
+//   max-width: 490px 
 //   margin-left: auto
 //   margin-right: auto
 
@@ -51,6 +51,3 @@ export default {
 //   font-weight: 900
 //   line-height: 70px
 </style>
-
-
-// Tesla, did you see.
