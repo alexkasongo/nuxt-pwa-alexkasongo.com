@@ -41,7 +41,7 @@ export default {
 
 // .banner-title, .banner-description
 //   width: 90%
-//   max-width: 490px 
+//   max-width: 490px //
 //   margin-left: auto
 //   margin-right: auto
 
