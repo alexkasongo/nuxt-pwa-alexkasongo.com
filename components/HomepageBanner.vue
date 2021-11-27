@@ -13,7 +13,7 @@
       {{ $prismic.asText(banner.title) }}
     </h2>
 
-    <!-- Template for page tagline. -->
+    <!-- Template for page tag. -->
     <p class="banner-description">{{ $prismic.asText(banner.tagline) }}</p>
 
     <prismic-link class="banner-button" :field="banner.button_link">
