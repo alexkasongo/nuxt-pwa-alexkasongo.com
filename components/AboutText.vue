@@ -14,7 +14,7 @@
     </p>
     <p class="about__text">
       &amp;
-      <a class="about__link" href="#">solution archicture</a>
+      <a class="about__link" href="#">html email development.</a>
     </p>
     <p class="about__text">
       <prismic-link :field="$store.state.menu.menu_links[1].link">
