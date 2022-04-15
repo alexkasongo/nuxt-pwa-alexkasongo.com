@@ -5,17 +5,17 @@
       <a class="about__link" href="#">Alex</a>
     </p>
     <p class="about__text">
-      I’m a front-end
-      <a class="about__link" href="#">engineer</a>,
+      I’m an Email
+      <a class="about__link" href="#">Developer</a>,
     </p>
     <p class="about__text">
       passionate for the
       <a class="about__link" href="#">web</a>,
     </p>
-    <p class="about__text">
+    <!-- <p class="about__text">
       &amp;
       <a class="about__link" href="#">html email development.</a>
-    </p>
+    </p> -->
     <p class="about__text">
       <prismic-link :field="$store.state.menu.menu_links[1].link">
         {{ $store.state.menu.menu_links[1].link.uid }}
