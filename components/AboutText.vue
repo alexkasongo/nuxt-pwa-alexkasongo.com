@@ -6,11 +6,11 @@
     </p>
     <p class="about__text">
       I’m an Email
-      <a class="about__link" href="#">Developer</a>,
+      <a class="about__link" href="#">Developer</a>
     </p>
     <p class="about__text">
       passionate for the
-      <a class="about__link" href="#">web</a>,
+      <a class="about__link" href="#">web</a>.
     </p>
     <!-- <p class="about__text">
       &amp;
