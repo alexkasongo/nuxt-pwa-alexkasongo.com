@@ -16,11 +16,17 @@
       &amp;
       <a class="about__link" href="#">html email development.</a>
     </p> -->
-    <p class="about__text">
+    <!-- ARCHIVE Prismic Link btn -->
+    <!-- <p class="about__text">
       <prismic-link :field="$store.state.menu.menu_links[1].link">
         {{ $store.state.menu.menu_links[1].link.uid }}
       </prismic-link>
+    </p> -->
+
+    <p class="about__text">
+      <NuxtLink to="/archive">archive</NuxtLink>
     </p>
+    <!-- <p class="about__text">new archive button</p> -->
   </div>
 </template>
 
@@ -29,8 +35,8 @@ export default {
   name: "about-text",
   mounted() {
     // console.log(`AboutText.vue - 43 - 🔥`, this.$store.state.menu.menu_links);
-  },
+  }
 };
 </script>
 
-<style></style>
+<style lang="scss" scope></style>

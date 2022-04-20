@@ -24,7 +24,7 @@ export default {
     return {
       title: "Alex Kasongo",
       description:
-        "Hi, my name is Alex Kasongo. I am a front-end engineer, passionate for the web & solution archicture",
+        "Hi, my name is Alex Kasongo. I am an Email Developer, whose passionate for the web.",
     };
   },
   head() {

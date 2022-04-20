@@ -7,9 +7,11 @@
         v-for="color of colors"
         :key="color"
         @click="$colorMode.preference = color"
-        :class="getClasses(color)"
+        :class="{ change_color: scrollPosition > 50 }"
       >
-        {{ color }}
+        <div :class="getClasses(color)">
+          {{ color }}
+        </div>
       </li>
     </ul>
   </div>
@@ -19,10 +21,14 @@ export default {
   data() {
     return {
       colors: ["system", "light", "dark", "sepia"],
+      scrollPosition: null
     };
   },
   created() {
     this.setActiveRouteName();
+  },
+  mounted() {
+    window.addEventListener("scroll", this.updateScroll);
   },
   methods: {
     getClasses(color) {
@@ -32,7 +38,7 @@ export default {
       }
       return {
         preferred: color === this.$colorMode.preference,
-        selected: color === this.$colorMode.value,
+        selected: color === this.$colorMode.value
       };
     },
     setActiveRouteName() {
@@ -48,17 +54,28 @@ export default {
         this.setActiveColor = "";
       }
     },
+    updateScroll() {
+      this.scrollPosition = window.scrollY;
+    }
   },
   watch: {
     // keep watch of route changes to and from. Us this to set active background color of current page
     $route(to, from) {
       this.setActiveRouteName();
-    },
-  },
+    }
+  }
 };
 </script>
 
 <style lang="scss" scope>
+// Change on scroll
+.change_color {
+  background-color: #000;
+  transition-duration: 0.5;
+  transition-delay: 0.2s;
+}
+// Change on scroll
+
 .color-mode {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
@@ -73,6 +90,7 @@ export default {
     @include custom-text-two($size: 20px);
     margin: 0 0px 0 5px;
     padding: 10px 0 0 5px;
+    height: max-content;
   }
 }
 

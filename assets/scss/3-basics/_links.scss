@@ -10,15 +10,15 @@ a {
   @include custom-text($size: 20px);
 }
 
-a:hover {
-  background-position: bottom;
-}
+// a:hover {
+//   background-position: bottom;
+// }
 
-a:focus {
-  outline: none;
-}
+// a:focus {
+//   outline: none;
+// }
 
-a:active {
-  position: relative;
-  top: 1px;
-}
+// a:active {
+//   position: relative;
+//   top: 1px;
+// }
