@@ -3,7 +3,7 @@
     <ul class="cards">
       <li class="cards__item" v-for="(item, i) in cards" :key="i">
         <div class="card">
-          <NuxtLink :to="{ path: `/html/${item.link}.html` }" target="_blank">
+          <NuxtLink :to="{ path: `${item.link}` }" target="_blank">
             <div
               class="card__image"
               v-bind:style="{
@@ -12,7 +12,7 @@
             ></div>
           </NuxtLink>
           <div class="card__content">
-            <div class="card__title">{{ item.link }}</div>
+            <div class="card__title">{{ item.name }}</div>
             <p @click="showMe(item.link)" class="card__text">
               {{ item.about }}
             </p>
@@ -35,33 +35,37 @@ export default {
         {
           image:
             "https://promotional-email.s3.us-west-2.amazonaws.com/main.png",
-          link: "promotional",
+          link: "/html/promotional.html",
           about:
             "A promotional email for Bottega Veneta using HTML, SASS, & MJML Framework.",
-          github: "https://github.com/alexkasongo"
+          github: "https://github.com/alexkasongo",
+          name: "Promotional"
         },
         {
           image:
             "https://transactional-email.s3.us-west-2.amazonaws.com/new.png",
-          link: "transactional",
+          link: "/html/transactional.html",
           about:
             "A transactional email for Bottega Veneta using HTML, SASS, & MJML Framework.",
-          github: "https://github.com/alexkasongo"
+          github: "https://github.com/alexkasongo",
+          name: "Transactional"
         },
         {
           image:
-            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-2022-gallery-3?wid=2824&hei=2400&fmt=jpeg&qlt=90&.v=1645810647598",
-          link: "landing-page",
-          about: "Responsive Apple Landing page by using HTML, & CSS.",
-          github: "https://github.com/alexkasongo"
+            "https://apple-landing-page.s3.us-west-2.amazonaws.com/product1.jpeg",
+          link: "/apple",
+          about: "Responsive Apple Landing page using HTML, & CSS.",
+          github: "https://github.com/alexkasongo",
+          name: "Landing-page"
         },
         {
           image:
             "https://entertainment-newsletter-email.s3.us-west-2.amazonaws.com/product1.png",
-          link: "newsletter",
+          link: "/html/newsletter.html",
           about:
             "A newsletter email for Pitchfork using HTML, SASS, & MJML Framework.",
-          github: "https://github.com/alexkasongo"
+          github: "https://github.com/alexkasongo",
+          name: "Newsletter"
         }
       ]
     };

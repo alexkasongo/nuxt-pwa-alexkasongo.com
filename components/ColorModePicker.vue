@@ -70,9 +70,7 @@ export default {
 <style lang="scss" scope>
 // Change on scroll
 .change_color {
-  background-color: #000;
-  transition-duration: 0.5;
-  transition-delay: 0.2s;
+  display: none;
 }
 // Change on scroll
 
