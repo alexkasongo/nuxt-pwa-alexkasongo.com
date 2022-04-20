@@ -23,72 +23,6 @@
         </div>
       </li>
     </ul>
-
-    <main>
-      <!-- <section class="section-profile">
-        <div class="profile-image">
-          <img
-            src="https://vetri-suriya.web.app/devchallenges/my-gallery/profilePhoto.png"
-            alt=""
-          />
-        </div>
-        <h5 class="profile-name">Alex Kasongo</h5>
-        <p class="profile-location">Edmonds, Washington, WA, 98026</p>
-        <div class="profile-stat">
-          <div class="post-stat">
-            <h5>HTML</h5>
-            <p>Posts</p>
-          </div>
-          <div class="follower-stat">
-            <h5>CSS</h5>
-            <p>Follower</p>
-          </div>
-          <div class="following-stat">
-            <h5>MJML</h5>
-            <p>Following</p>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- <section class="section-gallery">
-        <div>
-          <img
-            src="https://promotional-email.s3.us-west-2.amazonaws.com/main.png"
-            alt=""
-          />
-        </div>
-        <div class="wide">
-          <img
-            src="https://entertainment-newsletter-email.s3.us-west-2.amazonaws.com/product1.png"
-            alt=""
-          />
-        </div>
-        <div class="wide">
-          <img
-            src="https://transactional-email.s3.us-west-2.amazonaws.com/new.png"
-            alt=""
-          />
-        </div>
-        <div class="tall">
-          <img
-            src="https://vetri-suriya.web.app/devchallenges/my-gallery/photo_4.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="https://vetri-suriya.web.app/devchallenges/my-gallery/photo6.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="https://vetri-suriya.web.app/devchallenges/my-gallery/photo5.png"
-            alt=""
-          />
-        </div>
-      </section> -->
-    </main>
   </div>
 </template>
 
@@ -153,7 +87,7 @@ export default {
 
 <style lang="scss" scope>
 .archive--container {
-  margin: 50px 115px;
+  margin: 50px 0px;
 }
 .btn {
   background-color: white;
@@ -178,6 +112,7 @@ export default {
 .cards__item {
   display: flex;
   padding: 10px;
+  width: 100%;
 }
 @media (min-width: 40rem) {
   .cards__item {
