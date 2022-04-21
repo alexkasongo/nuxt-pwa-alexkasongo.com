@@ -16,7 +16,6 @@
     "@nuxtjs/prismic": "^1.2.3",
     "@prismicio/vue": "^2.0.7",
     "cookies": "^0.8.0",
-    "gsap": "./gsap-bonus.tgz",
     "nuxt": "^2.14.0",
     "prismic-javascript": "^2.7.1",
     "prismic-vue": "^2.0.1"
@@ -30,7 +29,6 @@
     "nodemon": "^2.0.4",
     "sass": "^1.50.1",
     "sass-loader": "10.1.1",
-    "vue-scrollmagic": "^1.2.0",
     "webpack": "^5.72.0"
   }
 }
