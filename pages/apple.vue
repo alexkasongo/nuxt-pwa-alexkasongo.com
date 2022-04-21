@@ -2,19 +2,7 @@
   <div class="apple">
     <div class="wrapper">
       <section class="hero">
-        <div class="inner">
-          <!-- <div class="clipper">
-            <h1>Go Musician</h1>
-          </div>
-
-          <div class="anim-panel">
-            <p>
-              Start touring all over the place and melting the hearts of chicks.
-            </p>
-
-            <a href="#" class="read-btn primary">Get Famous</a>
-          </div> -->
-        </div>
+        <div class="inner"></div>
       </section>
 
       <section class="sidebar">
@@ -53,70 +41,20 @@
       </section>
     </div>
   </div>
-  <!-- </div> -->
 </template>
-
-<script>
-export default {
-  data() {
-    return {};
-  },
-  created() {
-    // set navbar to display none
-  }
-};
-</script>
 
 <style lang="scss" scope>
 .apple {
   margin: 100px 10px;
-  // box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-  //   rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  // @media (min-width: $tablet) {
-  //   margin: 0;
-  // }
 }
 
 $primary-color: #d4eaca;
 $submit-btn-bg-color: black;
 $submit-btn-color: white;
 
-// header {
-//   position: absolute;
-//   padding: 1em;
-//   display: flex;
-//   justify-content: space-between;
-//   width: calc(100% - 2em);
-//   background: white;
-
-//   a {
-//     text-decoration: none;
-//     color: black;
-//   }
-
-//   a.logo {
-//     font-weight: bold;
-//     text-transform: uppercase;
-//   }
-
-//   nav ul {
-//     list-style-type: none;
-//     display: flex;
-//     justify-content: space-around;
-//     width: 100%;
-//     margin: 0;
-//     padding: 0;
-
-//     li a {
-//       padding: 1em;
-//     }
-//   }
-// }
-
 .wrapper {
   display: grid;
   grid-template-columns: auto;
-  // border-radius: 8px;
 
   section {
     padding: 3em;
@@ -148,7 +86,6 @@ $submit-btn-color: white;
       background-position: 3em;
       border: 1px solid gray;
       margin-top: 3em;
-      // margin-left: -3em;
       display: inline-block;
     }
   }

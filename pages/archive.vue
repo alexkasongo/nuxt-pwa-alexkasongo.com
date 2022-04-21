@@ -43,7 +43,8 @@ export default {
           link: "/html/promotional.html",
           about:
             "A promotional email for Bottega Veneta using HTML, SASS, & MJML Framework.",
-          github: "https://github.com/alexkasongo",
+          github:
+            "https://github.com/alexkasongo/promotional-email/tree/master",
           name: "Promotional"
         },
         {
@@ -52,7 +53,7 @@ export default {
           link: "/html/transactional.html",
           about:
             "A transactional email for Bottega Veneta using HTML, SASS, & MJML Framework.",
-          github: "https://github.com/alexkasongo",
+          github: "https://github.com/alexkasongo/transactional-email",
           name: "Transactional"
         },
         {
@@ -60,7 +61,8 @@ export default {
             "https://apple-landing-page.s3.us-west-2.amazonaws.com/product1.jpeg",
           link: "/apple",
           about: "Responsive Apple Landing page using HTML, & CSS.",
-          github: "https://github.com/alexkasongo",
+          github:
+            "https://github.com/alexkasongo/nuxt-pwa-alexkasongo.com/blob/master/pages/apple.vue",
           name: "Landing-page"
         },
         {
@@ -69,9 +71,16 @@ export default {
           link: "/html/newsletter.html",
           about:
             "A newsletter email for Pitchfork using HTML, SASS, & MJML Framework.",
-          github: "https://github.com/alexkasongo",
+          github: "https://github.com/alexkasongo/newsletter-email",
           name: "Newsletter"
         }
+        // {
+        //   image: "https://via.placeholder.com/800",
+        //   link: "/bottega",
+        //   about: "A scroll magic landing page.",
+        //   github: "https://github.com/alexkasongo",
+        //   name: "Gsap"
+        // }
       ]
     };
   },
