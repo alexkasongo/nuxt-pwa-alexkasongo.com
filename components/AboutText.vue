@@ -12,17 +12,6 @@
       passionate for the
       <a class="about__link" href="#">web</a>.
     </p>
-    <!-- <p class="about__text">
-      &amp;
-      <a class="about__link" href="#">html email development.</a>
-    </p> -->
-    <!-- ARCHIVE Prismic Link btn -->
-    <!-- <p class="about__text">
-      <prismic-link :field="$store.state.menu.menu_links[1].link">
-        {{ $store.state.menu.menu_links[1].link.uid }}
-      </prismic-link>
-    </p> -->
-
     <p class="about__text">
       <NuxtLink to="/archive">archive</NuxtLink>
     </p>
