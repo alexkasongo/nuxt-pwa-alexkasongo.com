@@ -172,10 +172,9 @@ export default {
   background: #fff;
 }
 .card__image {
-  background-position: center center;
+  background-position: top center left;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
   overflow: hidden;
   position: relative;
   transition: 0.8s all ease-in-out;
