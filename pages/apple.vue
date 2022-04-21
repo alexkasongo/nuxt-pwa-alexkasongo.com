@@ -20,13 +20,13 @@
       <section class="sidebar">
         <div class="inner">
           <div class="clipper">
-            <h2>
+            <h2 class="text-color">
               Apple introduces gorgeous new green finishes for the iPhone 13
               lineup
             </h2>
           </div>
           <div class="anim-panel">
-            <p>
+            <p class="text-color">
               New, sophisticated alpine green iPhone 13 Pro and green iPhone 13
               join the lineup, featuring the lightning-fast A15 Bionic, advanced
               camera systems, great battery life, impressive durability, and 5G
@@ -38,13 +38,14 @@
 
       <section class="subscribe">
         <div class="inner">
-          <!-- <div class="clipper">
-            <h2>Join Waiting List</h2>
-          </div> -->
+          <div class="clipper">
+            <h2 class="text-color">Join Waiting List</h2>
+          </div>
           <div class="anim-panel">
-            <!-- <p class="cta">
+            <p class="text-color">
               Get the latest updates about this website and stuff.
-            </p> -->
+            </p>
+            <br />
             <input placeholder="Email Address" type="text" name="email" />
             <button class="cta">Join waitlist</button>
           </div>
@@ -154,7 +155,7 @@ $submit-btn-color: white;
 
   section.hero {
     padding-top: 8em;
-    background: url("https://apple-landing-page.s3.us-west-2.amazonaws.com/product2.jpeg");
+    background: url("https://sm.mashable.com/t/mashable_in/photo/default/iphone-13-alpine-green_7yqa.1248.jpg");
     background-size: cover;
     background-position: center;
 
@@ -173,6 +174,7 @@ $submit-btn-color: white;
   section.subscribe {
     font-size: 0.9rem;
     line-height: 1.6em;
+    background: #fff;
   }
 
   section.sidebar {
@@ -206,6 +208,10 @@ $submit-btn-color: white;
       border-radius: 8px;
     }
   }
+}
+
+.text-color {
+  color: #000;
 }
 
 @media only screen and (min-width: 1020px) {

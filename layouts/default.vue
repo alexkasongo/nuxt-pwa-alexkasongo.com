@@ -2,8 +2,8 @@
   <div class="default">
     <!-- remove header and add logo which navigates user back home -->
     <header-prismic />
-    <ColorModePicker id="clip" />
-    <BackButton />
+    <!-- <ColorModePicker id="clip" /> -->
+    <!-- <BackButton /> -->
     <nuxt />
     <footer-prismic />
   </div>
@@ -14,29 +14,29 @@ import HeaderPrismic from "~/components/HeaderPrismic.vue";
 import AboutText from "~/components/AboutText.vue";
 import FooterPrismic from "~/components/FooterPrismic.vue";
 import ColorModePicker from "~/components/ColorModePicker.vue";
-import BackButton from "~/components/BackButton.vue";
+// import BackButton from "~/components/BackButton.vue";
 
 export default {
   components: {
     HeaderPrismic,
     AboutText,
     FooterPrismic,
-    ColorModePicker,
-    BackButton,
+    ColorModePicker
+    // BackButton
   },
   data() {
     return {
       title: "Alex Kasongo",
       description:
-        "Hi, my name is Alex Kasongo. I am a front-end engineer, passionate for the web & solution archicture",
+        "Hi, my name is Alex Kasongo. I am a front-end engineer, passionate for the web & solution archicture"
     };
   },
   head() {
     return {
       title: this.title,
       meta: [
-        { hid: "description", name: "description", content: this.description },
-      ],
+        { hid: "description", name: "description", content: this.description }
+      ]
     };
   },
   // Called before rendering the layout (even for error page)
@@ -45,11 +45,11 @@ export default {
   },
   data() {
     return {
-      clicked: false,
+      clicked: false
     };
   },
   methods: {
-    toggleMode: function () {
+    toggleMode: function() {
       var body = document.querySelector("body");
       var galleryTitle = document.querySelector(".gallery-title");
 
@@ -64,8 +64,8 @@ export default {
         galleryTitle.style.cssText = "color:black; transition: 1s ease-in;";
         this.clicked = false;
       }
-    },
-  },
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>

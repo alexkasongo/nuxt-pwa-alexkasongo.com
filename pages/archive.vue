@@ -23,11 +23,16 @@
         </div>
       </li>
     </ul>
+    <BackButton />
   </div>
 </template>
 
 <script>
+import BackButton from "~/components/BackButton.vue";
 export default {
+  components: {
+    BackButton
+  },
   data() {
     return {
       html: "<p>Hello Aleko</p>",

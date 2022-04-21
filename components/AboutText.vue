@@ -5,15 +5,28 @@
       <a class="about__link" href="#">Alex</a>
     </p>
     <p class="about__text">
-      I’m an Email
+      I am an Email
       <a class="about__link" href="#">Developer</a>
     </p>
     <p class="about__text">
-      passionate for the
+      whose passionate for the
       <a class="about__link" href="#">web</a>.
     </p>
     <p class="about__text">
-      <NuxtLink to="/archive">archive</NuxtLink>
+      I manage, build, test, and
+      <a class="about__link" href="#">deliver</a>
+    </p>
+    <p class="about__text">
+      transactional, and marketing <a class="about__link" href="#">emails</a>
+    </p>
+    <p class="about__text">
+      using HTML, CSS and <a class="about__link" href="#">modern</a>
+    </p>
+    <p class="about__text">
+      email <a class="about__link" href="#">frameworks</a>.
+    </p>
+    <p class="about__text">
+      <NuxtLink to="/archive">portfolio</NuxtLink>
     </p>
     <!-- <p class="about__text">new archive button</p> -->
   </div>

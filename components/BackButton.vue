@@ -1,12 +1,12 @@
 <template>
-  <div class="mode-toggle" @click="$router.go(-1)">back</div>
+  <div class="mode-toggle" @click="$router.go(-1)">Back</div>
 </template>
 <script>
 export default {
   name: "BackButton",
   data() {
     return {};
-  },
+  }
 };
 </script>
 
@@ -19,12 +19,15 @@ export default {
   transform: rotate(180deg);
   position: fixed;
   left: 20px;
-  top: 50vh;
+  top: 45vh;
   @include button;
   background-color: #000;
   color: var(--color-primary);
   z-index: 2;
 }
+// .mode-toggle::first-letter {
+//   text-transform: capitalize;
+// }
 .mode-toggle::before {
   content: "←";
   margin: 0 0 10px 0;

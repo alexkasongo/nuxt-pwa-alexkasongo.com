@@ -7,8 +7,8 @@
         v-for="color of colors"
         :key="color"
         @click="$colorMode.preference = color"
-        :class="{ change_color: scrollPosition > 50 }"
       >
+        <!-- :class="{ change_color: scrollPosition > 50 }" -->
         <div :class="getClasses(color)">
           {{ color }}
         </div>
@@ -75,19 +75,19 @@ export default {
 // Change on scroll
 
 .color-mode {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  position: fixed;
-  left: 20px;
-  top: 4rem;
-  height: 90px;
+  // writing-mode: vertical-rl;
+  // transform: rotate(180deg);
+  // position: fixed;
+  // left: 20px;
+  // top: 4rem;
+  // height: 90px;
   z-index: 2;
   &__click {
     cursor: pointer;
     width: max-content;
     @include custom-text-two($size: 20px);
     margin: 0 0px 0 5px;
-    padding: 10px 0 0 5px;
+    // padding: 10px 0 0 5px;
     height: max-content;
   }
 }
