@@ -106,6 +106,9 @@ export default {
 <style lang="scss" scope>
 .archive--container {
   margin: 50px 0px;
+  @media (max-width: 450px) {
+    margin: 50px 0px 100px 0px;
+  }
 }
 .btn {
   background-color: white;
@@ -127,6 +130,7 @@ export default {
   height: calc(100vh - 100px);
   @media (max-width: 1200px) {
     flex-wrap: wrap;
+    height: unset;
   }
 }
 .cards__item {
