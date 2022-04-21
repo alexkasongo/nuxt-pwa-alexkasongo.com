@@ -25,6 +25,7 @@
           v-for="color of colors"
           :key="color"
           @click="$colorMode.preference = color"
+          :class="{ change_color: scrollPosition > 50 }"
         >
           <!-- :class="{ change_color: scrollPosition > 50 }" -->
           <div :class="getClasses(color)">
@@ -50,6 +51,9 @@ export default {
   },
   created() {
     this.setActiveRouteName();
+  },
+  mounted() {
+    window.addEventListener("scroll", this.updateScroll);
   },
   methods: {
     getClasses(color) {
