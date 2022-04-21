@@ -23,7 +23,7 @@
         </div>
       </li>
     </ul>
-    <BackButton />
+    <!-- <BackButton /> -->
   </div>
 </template>
 
@@ -39,7 +39,7 @@ export default {
       cards: [
         {
           image:
-            "https://promotional-email.s3.us-west-2.amazonaws.com/main.png",
+            "https://portfolio-email-screenshots.s3.us-west-2.amazonaws.com/promotional-email.png",
           link: "/html/promotional.html",
           about:
             "A promotional email for Bottega Veneta using HTML, SASS, & MJML Framework.",
@@ -49,7 +49,7 @@ export default {
         },
         {
           image:
-            "https://transactional-email.s3.us-west-2.amazonaws.com/new.png",
+            "https://portfolio-email-screenshots.s3.us-west-2.amazonaws.com/transactional-email.png",
           link: "/html/transactional.html",
           about:
             "A transactional email for Bottega Veneta using HTML, SASS, & MJML Framework.",
@@ -58,7 +58,7 @@ export default {
         },
         {
           image:
-            "https://apple-landing-page.s3.us-west-2.amazonaws.com/product1.jpeg",
+            "https://portfolio-email-screenshots.s3.us-west-2.amazonaws.com/apple-landing-page+1.png",
           link: "/apple",
           about: "Responsive Apple Landing page using HTML, & CSS.",
           github:
@@ -67,7 +67,7 @@ export default {
         },
         {
           image:
-            "https://entertainment-newsletter-email.s3.us-west-2.amazonaws.com/product1.png",
+            "https://portfolio-email-screenshots.s3.us-west-2.amazonaws.com/newsletter-email.png",
           link: "/html/newsletter.html",
           about:
             "A newsletter email for Pitchfork using HTML, SASS, & MJML Framework.",
@@ -120,12 +120,14 @@ export default {
 }
 .cards {
   display: flex;
-  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
-  max-width: 700px;
   margin: auto;
+  height: calc(100vh - 100px);
+  @media (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
 }
 .cards__item {
   display: flex;
@@ -169,10 +171,11 @@ export default {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
   overflow: hidden;
   position: relative;
   transition: 0.8s all ease-in-out;
-  min-height: 285px;
+  min-height: 65vh;
 }
 .card__image::before {
   content: "";
@@ -200,124 +203,4 @@ export default {
 .openUrl {
   cursor: pointer;
 }
-
-// ##################
-// @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
-// * {
-//   box-sizing: border-box;
-//   padding: 0;
-//   margin: 0;
-// }
-
-// body {
-//   font-family: "Montserrat", sans-serif;
-//   max-width: 700px;
-//   height: 100%;
-//   margin: 0px auto;
-
-//   main {
-//     height: 95%;
-//     display: flex;
-//     flex-direction: column;
-//     padding: 5% 0px 0px;
-
-//     .section-profile {
-//       height: 35%;
-//       display: flex;
-//       flex-direction: column;
-//       align-items: center;
-//       row-gap: 8px;
-
-//       .profile-image {
-//         img {
-//           width: 100px;
-//           border-radius: 10px;
-//         }
-//       }
-
-//       .profile-name {
-//         font-size: 16px;
-//         font-weight: bold;
-//       }
-
-//       .profile-location {
-//         font-size: 10px;
-//         color: #a9a9a9;
-//       }
-
-//       .profile-stat {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         column-gap: 15px;
-//         margin-top: 5px;
-
-//         div {
-//           width: 80px;
-//           border-radius: 10px;
-//           background: #e5e5e5;
-//           display: grid;
-//           place-items: center;
-//           padding: 10px;
-
-//           h5 {
-//             font-size: 12px;
-//             color: #4e5150;
-//           }
-
-//           p {
-//             font-size: 10px;
-//             color: #a9a9a9;
-//           }
-//         }
-//       }
-//     }
-
-//     .section-gallery > div {
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//     }
-//     .section-gallery > div > img {
-//       width: 100%;
-//       height: 100%;
-//       object-fit: cover;
-//       border-radius: 10px;
-//     }
-
-//     .section-gallery {
-//       display: grid;
-//       grid-gap: 15px;
-//       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-//       grid-auto-rows: 200px;
-//       grid-auto-flow: dense;
-//       padding: 30px 0px;
-//     }
-//     .section-gallery .wide {
-//       grid-column: span 2;
-//     }
-//     .section-gallery .tall {
-//       grid-row: span 2;
-//     }
-//   }
-// }
-
-// @media screen and (max-width: 768px) {
-//   body {
-//     width: 95%;
-//   }
-// }
-// @media screen and (max-width: 425px) {
-//   body {
-//     width: 95%;
-
-//     main {
-//       .section-gallery {
-//         grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
-//         grid-auto-rows: 100px;
-//         padding: 30px 0px 0px;
-//       }
-//     }
-//   }
-// }
 </style>
