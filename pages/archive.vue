@@ -58,22 +58,23 @@ export default {
         },
         {
           image:
-            "https://portfolio-email-screenshots.s3.us-west-2.amazonaws.com/apple-landing-page+1.png",
-          link: "/apple",
-          about: "Responsive Apple Landing page using HTML, & CSS.",
-          github:
-            "https://github.com/alexkasongo/nuxt-pwa-alexkasongo.com/blob/master/pages/apple.vue",
-          name: "Landing-page"
-        },
-        {
-          image:
             "https://portfolio-email-screenshots.s3.us-west-2.amazonaws.com/newsletter-email.png",
           link: "/html/newsletter.html",
           about:
             "A newsletter email for Pitchfork using HTML, SASS, & MJML Framework.",
           github: "https://github.com/alexkasongo/newsletter-email",
           name: "Newsletter"
+        },
+        {
+          image:
+            "https://portfolio-email-screenshots.s3.us-west-2.amazonaws.com/apple-landing-page+1.png",
+          link: "/apple",
+          about: "Responsive Apple Landing page using HTML, & CSS.",
+          github:
+            "https://github.com/alexkasongo/nuxt-pwa-alexkasongo.com/blob/master/pages/apple.vue",
+          name: "Landing-page"
         }
+
         // {
         //   image: "https://via.placeholder.com/800",
         //   link: "/bottega",
