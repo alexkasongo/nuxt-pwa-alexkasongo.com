@@ -36,7 +36,6 @@
 export default {
   name: "about-text",
   mounted() {
-    // console.log(`AboutText.vue - 43 - 🔥`, this.$store.state.menu.menu_links);
     this.animatAboutText();
   },
   methods: {
