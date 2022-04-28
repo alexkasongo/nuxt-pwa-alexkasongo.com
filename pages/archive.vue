@@ -12,7 +12,9 @@
             ></div>
           </NuxtLink>
           <div class="card__content">
-            <div class="card__title">{{ item.name }}</div>
+            <NuxtLink :to="{ path: `${item.link}` }" target="_blank">
+              <div class="card__title">{{ item.name }}</div>
+            </NuxtLink>
             <p @click="showMe(item.link)" class="card__text">
               {{ item.about }}
             </p>

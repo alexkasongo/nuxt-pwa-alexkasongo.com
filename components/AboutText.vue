@@ -26,7 +26,7 @@
       email <a class="about__link" href="#">frameworks</a>.
     </p>
     <p class="about__text">
-      <NuxtLink to="/archive">portfolio</NuxtLink>
+      <NuxtLink to="/archive">Portfolio</NuxtLink>
     </p>
     <!-- <p class="about__text">new archive button</p> -->
   </div>
