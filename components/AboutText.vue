@@ -37,8 +37,44 @@ export default {
   name: "about-text",
   mounted() {
     // console.log(`AboutText.vue - 43 - 🔥`, this.$store.state.menu.menu_links);
+    this.animatAboutText();
+  },
+  methods: {
+    animatAboutText() {
+      let tl = this.$gsap.timeline();
+
+      tl.to(".about", {
+        duration: 0.2,
+        display: "block"
+      })
+        .from(".about__text", {
+          duration: 0.75,
+          y: 150,
+          autoAlpha: 0,
+          ease: "Power3.out",
+          stagger: 0.5
+        })
+        .from(
+          "li",
+          {
+            duration: 0.75,
+            x: 300,
+            autoAlpha: 0,
+            ease: "elastic.out(1, 1)",
+            stagger: {
+              each: 0.75,
+              amount: 0.5
+            }
+          },
+          "+=0.25"
+        );
+    }
   }
 };
 </script>
 
-<style lang="scss" scope></style>
+<style lang="scss" scope>
+.about {
+  display: none;
+}
+</style>
