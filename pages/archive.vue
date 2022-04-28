@@ -75,15 +75,14 @@ export default {
           github:
             "https://github.com/alexkasongo/nuxt-pwa-alexkasongo.com/blob/master/pages/apple.vue",
           name: "Landing-page"
+        },
+        {
+          image: "https://via.placeholder.com/800",
+          link: "/bottega",
+          about: "A scroll magic landing page.",
+          github: "https://github.com/alexkasongo",
+          name: "Gsap"
         }
-
-        // {
-        //   image: "https://via.placeholder.com/800",
-        //   link: "/bottega",
-        //   about: "A scroll magic landing page.",
-        //   github: "https://github.com/alexkasongo",
-        //   name: "Gsap"
-        // }
       ]
     };
   },

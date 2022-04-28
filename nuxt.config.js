@@ -103,17 +103,61 @@ export default {
   },
   buildModules: [
     '@nuxtjs/ngrok',
+    // Gsap animations
+    'nuxt-gsap-module'
   ],
+  // multiple gsap plugins
+  gsap: {
+    extraPlugins: {
+      scrollTo: true,
+      scrollTrigger: true
+    },
+    extraEases: {
+      expoScaleEase: true
+    }
+  },
   ngrok: {
     // module options
     ngrokauth: process.env.NGROK_AUTH
   },
   generate: {
     fallback: true // Netlify reads a 404.html, Nuxt will load as an SPA
-  }
+  },
   // Comment out if you need to test PWA
   // server: {
   //   port: 3000,
   //   host: "0.0.0.0"
+  // }
+  
+  // Gsap global transitions
+  // Add global page transition
+  // pageTransition: {
+  //   name: 'archive',
+  //   mode: 'out-in',
+  //   css: false,
+
+  //   beforeEnter(el) {
+  //     this.$gsap.set(el, {
+  //       opacity: 0
+  //     })
+  //   },
+
+  //   enter(el, done) {
+  //     this.$gsap.to(el, {
+  //       opacity: 1,
+  //       duration: 0.5,
+  //       ease: 'power2.inOut',
+  //       onComplete: done
+  //     })
+  //   },
+
+  //   leave(el, done) {
+  //     this.$gsap.to(el, {
+  //       opacity: 0,
+  //       duration: 0.5,
+  //       ease: 'power2.inOut',
+  //       onComplete: done
+  //     })
+  //   }
   // }
 };
