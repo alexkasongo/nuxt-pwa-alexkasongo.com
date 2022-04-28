@@ -28,7 +28,6 @@
     <p class="about__text">
       <NuxtLink to="/archive">Portfolio</NuxtLink>
     </p>
-    <!-- <p class="about__text">new archive button</p> -->
   </div>
 </template>
 
