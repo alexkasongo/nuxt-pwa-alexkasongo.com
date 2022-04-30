@@ -19,3 +19,10 @@
     url('~assets/fonts/Lato-Bold.ttf') format('ttf');
   font-style: normal;
 }
+@font-face {
+  font-family: 'Italiana-Regular';
+  src: url('~assets/fonts/Italiana-Regular.woff2') format('woff2'),
+  url('~assets/fonts/Italiana-Regular.woff') format('woff'),
+  url('~assets/fonts/Italiana-Regular.ttf') format('ttf');
+  font-style: normal;
+}

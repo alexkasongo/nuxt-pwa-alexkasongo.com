@@ -36,6 +36,7 @@ export default {
   name: "about-text",
   mounted() {
     this.animatAboutText();
+    this.colorMode();
   },
   methods: {
     animatAboutText() {
@@ -50,29 +51,45 @@ export default {
           y: 150,
           autoAlpha: 0,
           ease: "Power3.out",
-          stagger: 0.5
+          stagger: 0.2
         })
-        .from(
-          "li",
-          {
-            duration: 0.75,
-            x: 300,
-            autoAlpha: 0,
-            ease: "elastic.out(1, 1)",
-            stagger: {
-              each: 0.75,
-              amount: 0.5
-            }
-          },
-          "+=0.25"
-        );
+        .to(".about__link", {
+          duration: 0.75,
+          background: "#009D3A",
+          // x: 150,
+          // autoAlpha: 0.2,
+          ease: "Power3.out",
+          stagger: 0.1
+        })
+        .from(".about__link", {
+          duration: 0.3,
+          background: "none",
+          ease: "Power3.out",
+          stagger: 0.08
+        });
+    },
+    colorMode() {
+      let tl = this.$gsap.timeline();
+
+      tl.from(
+        "li",
+        {
+          duration: 0.75,
+          x: 300,
+          autoAlpha: 0,
+          ease: "elastic.out(1, 1)",
+          stagger: {
+            each: 0.75,
+            amount: 0.5
+          }
+        },
+        "+=2"
+      );
     }
   }
 };
 </script>
 
 <style lang="scss" scope>
-.about {
-  display: none;
-}
+// styles inside scss component folder
 </style>
