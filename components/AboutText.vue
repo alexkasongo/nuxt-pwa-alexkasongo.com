@@ -56,8 +56,6 @@ export default {
         .to(".about__link", {
           duration: 0.75,
           background: "#009D3A",
-          // x: 150,
-          // autoAlpha: 0.2,
           ease: "Power3.out",
           stagger: 0.1
         })
