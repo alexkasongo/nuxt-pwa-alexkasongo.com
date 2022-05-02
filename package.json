@@ -25,7 +25,7 @@
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "@nuxtjs/style-resources": "^1.0.0",
     "cross-env": "^7.0.2",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "nodemon": "^2.0.4",
     "nuxt-gsap-module": "^1.7.0",
     "sass": "^1.50.1",
