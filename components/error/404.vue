@@ -34,12 +34,12 @@ div {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: auto;
   font-family: "Poppins", sans-serif;
   color: #ffffff;
   font-size: 16px;
   user-select: none;
-  background-image: url("https://media.giphy.com/media/l3q2K5jinAlChoCLS/source.gif");
+  background-image: url("https://snipcartweb-10f3.kxcdn.com/media/9862/snipcart-404.gif");
 }
 
 h1 {
