@@ -6,7 +6,7 @@
 </template>
 <script>
 export default {
-  name: "error-404",
+  name: "error-500",
   props: {
     error: {
       type: Object,
