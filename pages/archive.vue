@@ -252,7 +252,7 @@ export default {
 // #####################
 .design--container {
   width: 100%;
-  height: 100vh;
+  padding-bottom: 100px;
 }
 .design__image {
   background-position: top center left;
@@ -260,11 +260,10 @@ export default {
   background-size: cover;
   overflow: hidden;
   position: relative;
-  // transition: 0.8s all ease-in-out;
-  // min-height: calc(100vh - 20px);
   min-height: 100vh;
   border-radius: 8px;
   margin: 50px 10px;
   background-size: cover;
+  cursor: pointer;
 }
 </style>
