@@ -1,31 +1,44 @@
 <template>
-  <div class="archive--container">
-    <ul class="cards">
-      <li class="cards__item" v-for="(item, i) in cards" :key="i">
-        <div class="card">
-          <NuxtLink :to="{ path: `${item.link}` }" target="_blank">
-            <div
-              class="card__image"
-              v-bind:style="{
-                'background-image': 'url(' + item.image + ')'
-              }"
-            ></div>
-          </NuxtLink>
-          <div class="card__content">
+  <div class="portfolio-container">
+    <div class="archive--container">
+      <ul class="cards">
+        <li class="cards__item" v-for="(item, i) in cards" :key="i">
+          <div class="card">
             <NuxtLink :to="{ path: `${item.link}` }" target="_blank">
-              <div class="card__title">{{ item.name }}</div>
+              <div
+                class="card__image"
+                v-bind:style="{
+                  'background-image': 'url(' + item.image + ')',
+                }"
+              ></div>
             </NuxtLink>
-            <p @click="showMe(item.link)" class="card__text">
-              {{ item.about }}
-            </p>
-            <div @click="openGithub(item.github)" class="card__title openUrl">
-              github
+            <div class="card__content">
+              <NuxtLink :to="{ path: `${item.link}` }" target="_blank">
+                <div class="card__title">{{ item.name }}</div>
+              </NuxtLink>
+              <p @click="showMe(item.link)" class="card__text">
+                {{ item.about }}
+              </p>
+              <div @click="openGithub(item.github)" class="card__title openUrl">
+                github
+              </div>
             </div>
           </div>
-        </div>
-      </li>
-    </ul>
-    <!-- <BackButton /> -->
+        </li>
+      </ul>
+      <!-- <BackButton /> -->
+    </div>
+    <div class="design--container">
+      <div class="design" v-for="(design, i) in designs" :key="i">
+        <div
+          @click="openFigma(design.figma)"
+          class="design__image"
+          v-bind:style="{
+            'background-image': 'url(' + design.image + ')',
+          }"
+        ></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -33,11 +46,43 @@
 import BackButton from "~/components/BackButton.vue";
 export default {
   components: {
-    BackButton
+    BackButton,
   },
   data() {
     return {
       html: "<p>Hello Aleko</p>",
+      designs: [
+        {
+          image:
+            "https://promotional-email.s3.us-west-2.amazonaws.com/promo-design.png",
+          link: "https://www.figma.com/file/y1ztuSS8aujPN6cGBW81DW/promotional-email-assets?node-id=0%3A1",
+          about:
+            "A promotional email for Bottega Veneta using HTML, SASS, & MJML Framework.",
+          figma:
+            "https://www.figma.com/file/y1ztuSS8aujPN6cGBW81DW/promotional-email-assets?node-id=0%3A1",
+          name: "Promotional",
+        },
+        {
+          image:
+            "https://promotional-email.s3.us-west-2.amazonaws.com/transactional-design.png",
+          link: "https://www.figma.com/file/sPyzwtyqI2yjRXVc1rUTTk/transactional-email-assets",
+          about:
+            "A transactional email for Bottega Veneta using HTML, SASS, & MJML Framework.",
+          figma:
+            "https://www.figma.com/file/sPyzwtyqI2yjRXVc1rUTTk/transactional-email-assets",
+          name: "Transactional",
+        },
+        {
+          image:
+            "https://promotional-email.s3.us-west-2.amazonaws.com/newsletter-design.png",
+          link: "https://www.figma.com/file/WOpTxCUdCyUIsbQkrRDqQV/newsletter-email-assets?node-id=0%3A1",
+          about:
+            "A newsletter email for Pitchfork using HTML, SASS, & MJML Framework.",
+          figma:
+            "https://www.figma.com/file/WOpTxCUdCyUIsbQkrRDqQV/newsletter-email-assets?node-id=0%3A1",
+          name: "Newsletter",
+        },
+      ],
       cards: [
         {
           image:
@@ -47,7 +92,7 @@ export default {
             "A promotional email for Bottega Veneta using HTML, SASS, & MJML Framework.",
           github:
             "https://github.com/alexkasongo/promotional-email/tree/master",
-          name: "Promotional"
+          name: "Promotional",
         },
         {
           image:
@@ -56,7 +101,7 @@ export default {
           about:
             "A transactional email for Bottega Veneta using HTML, SASS, & MJML Framework.",
           github: "https://github.com/alexkasongo/transactional-email",
-          name: "Transactional"
+          name: "Transactional",
         },
         {
           image:
@@ -65,7 +110,7 @@ export default {
           about:
             "A newsletter email for Pitchfork using HTML, SASS, & MJML Framework.",
           github: "https://github.com/alexkasongo/newsletter-email",
-          name: "Newsletter"
+          name: "Newsletter",
         },
         {
           image:
@@ -74,16 +119,9 @@ export default {
           about: "Responsive Apple Landing page using HTML, & CSS.",
           github:
             "https://github.com/alexkasongo/nuxt-pwa-alexkasongo.com/blob/master/pages/apple.vue",
-          name: "Landing-page"
-        }
-        // {
-        //   image: "https://via.placeholder.com/800",
-        //   link: "/bottega",
-        //   about: "A scroll magic landing page.",
-        //   github: "https://github.com/alexkasongo",
-        //   name: "Gsap"
-        // }
-      ]
+          name: "Landing-page",
+        },
+      ],
     };
   },
   mounted() {
@@ -100,8 +138,11 @@ export default {
     },
     openGithub(url) {
       window.open(url);
-    }
-  }
+    },
+    openFigma(url) {
+      window.open(url);
+    },
+  },
 };
 </script>
 
@@ -153,7 +194,6 @@ export default {
 .card {
   width: 100%;
   background-color: white;
-  // box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -207,5 +247,24 @@ export default {
 }
 .openUrl {
   cursor: pointer;
+}
+
+// #####################
+.design--container {
+  width: 100%;
+  height: 100vh;
+}
+.design__image {
+  background-position: top center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  // transition: 0.8s all ease-in-out;
+  // min-height: calc(100vh - 20px);
+  min-height: 100vh;
+  border-radius: 8px;
+  margin: 50px 10px;
+  background-size: cover;
 }
 </style>
