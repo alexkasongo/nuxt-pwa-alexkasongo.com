@@ -23,7 +23,7 @@
       using HTML, CSS and <a class="about__link" href="#">modern</a>
     </p>
     <p class="about__text">
-      email <a class="about__link" href="#">frameworks</a>.
+      email <a class="about__link" href="#">frameworks.</a>
     </p>
     <p class="about__text">
       <NuxtLink to="/archive">Portfolio</NuxtLink>
@@ -44,26 +44,26 @@ export default {
 
       tl.to(".about", {
         duration: 0.2,
-        display: "block"
+        display: "block",
       })
         .from(".about__text", {
           duration: 0.75,
           y: 150,
           autoAlpha: 0,
           ease: "Power3.out",
-          stagger: 0.2
+          stagger: 0.2,
         })
         .to(".about__link", {
           duration: 0.75,
           background: "#009D3A",
           ease: "Power3.out",
-          stagger: 0.1
+          stagger: 0.1,
         })
         .from(".about__link", {
           duration: 0.3,
           background: "none",
           ease: "Power3.out",
-          stagger: 0.08
+          stagger: 0.08,
         });
     },
     colorMode() {
@@ -78,13 +78,13 @@ export default {
           ease: "elastic.out(1, 1)",
           stagger: {
             each: 0.75,
-            amount: 0.5
-          }
+            amount: 0.5,
+          },
         },
         "+=2"
       );
-    }
-  }
+    },
+  },
 };
 </script>
 
