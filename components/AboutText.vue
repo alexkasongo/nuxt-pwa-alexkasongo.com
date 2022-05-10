@@ -89,5 +89,5 @@ export default {
 </script>
 
 <style lang="scss" scope>
-// styles inside scss component folder
+// styles are inside scss component folder
 </style>
