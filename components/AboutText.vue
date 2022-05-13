@@ -10,7 +10,7 @@
     </p>
     <p class="about__text">
       whose passionate for the
-      <a class="about__link" href="#">web</a>.
+      <a class="about__link" href="#">web.</a>
     </p>
     <p class="about__text">
       I manage, build, test, and
