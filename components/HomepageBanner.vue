@@ -4,7 +4,7 @@
     <div
       class="homepage-banner"
       :style="{
-        backgroundImage: 'url(' + banner.image.url + ')'
+        backgroundImage: 'url(' + banner.image.url + ')',
       }"
     ></div>
 
@@ -25,7 +25,7 @@
 <script>
 export default {
   props: ["banner"],
-  name: "homepage-banner"
+  name: "homepage-banner",
 };
 </script>
 
@@ -35,20 +35,4 @@ export default {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
-// .banner-content
-//   text-align: center
-
-// .banner-title, .banner-description
-//   width: 90%
-//   max-width: 490px //
-//   margin-left: auto
-//   margin-right: auto
-
-// .banner-title
-//   color: #ffffff
-//   font-size: 70px
-//   font-weight: 900
-//   line-height: 70px
 </style>
-
