@@ -21,7 +21,7 @@ export default {
   data() {
     return {
       colors: ["system", "light", "dark", "sepia"],
-      scrollPosition: null
+      scrollPosition: null,
     };
   },
   created() {
@@ -38,7 +38,7 @@ export default {
       }
       return {
         preferred: color === this.$colorMode.preference,
-        selected: color === this.$colorMode.value
+        selected: color === this.$colorMode.value,
       };
     },
     setActiveRouteName() {
@@ -56,14 +56,14 @@ export default {
     },
     updateScroll() {
       this.scrollPosition = window.scrollY;
-    }
+    },
   },
   watch: {
     // keep watch of route changes to and from. Us this to set active background color of current page
     $route(to, from) {
       this.setActiveRouteName();
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -87,7 +87,6 @@ export default {
     width: max-content;
     @include custom-text-two($size: 20px);
     margin: 0 0px 0 5px;
-    // padding: 10px 0 0 5px;
     height: max-content;
   }
 }
