@@ -46,7 +46,7 @@ export default {
       setActiveColor: "",
       // Color picker
       colors: ["system", "light", "dark", "sepia"],
-      scrollPosition: null
+      scrollPosition: null,
     };
   },
   created() {
@@ -63,7 +63,7 @@ export default {
       }
       return {
         preferred: color === this.$colorMode.preference,
-        selected: color === this.$colorMode.value
+        selected: color === this.$colorMode.value,
       };
     },
     setActiveRouteName() {
@@ -81,19 +81,19 @@ export default {
     },
     updateScroll() {
       this.scrollPosition = window.scrollY;
-    }
+    },
   },
   watch: {
     // keep watch of route changes to and from. Us this to set active background color of current page
     $route(to, from) {
       this.setActiveRouteName();
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-// COLOR PICKER
+// COLOR PICKER START
 
 // Change on scroll
 .change_color {
@@ -134,5 +134,5 @@ export default {
   content: "●";
   color: var(--color-primary);
 }
-// COLOR PICKER
+// COLOR PICKER END
 </style>
