@@ -22,10 +22,6 @@
     <p class="about__text">
       a lover of success <a class="about__link" href="#">stories.</a>
     </p>
-    <!-- <p class="about__text">
-      Let's build something great
-      <a class="about__link" href="#">together!</a>
-    </p> -->
     <p class="about__text">
       <!-- <NuxtLink to="/archive">Portfolio</NuxtLink> -->
     </p>
