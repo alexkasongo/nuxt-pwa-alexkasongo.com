@@ -23,7 +23,7 @@
       a lover of success <a class="about__link" href="#">stories.</a>
     </p>
     <p class="about__text">
-      <!-- <NuxtLink to="/archive">Portfolio</NuxtLink> -->
+      <!-- <NuxtLink to="/archive">Portfolios</NuxtLink> -->
     </p>
   </div>
 </template>
