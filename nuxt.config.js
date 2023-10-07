@@ -7,10 +7,10 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Hi, my name is Alex Kasongo. I am a front-end engineer, passionate for the web & solution archictecture' },
+      { hid: 'description', name: 'description', content: 'Strategic Project Manager | Expert in Implementation, Stakeholder Relations, and Seamless Transitions.' },
       // Facebook
       { property: 'og:title', content: 'Alex Kasongo' },
-      { property: 'og:description', content: 'Hi, my name is Alex Kasongo. I am a front-end engineer, passionate for the web & solution archictecture' },
+      { property: 'og:description', content: 'Strategic Project Manager | Expert in Implementation, Stakeholder Relations, and Seamless Transitions.' },
       { property: 'og:site_name', content: 'Alex Kasongo' },
       { property: 'og:image', content: 'https://images.prismic.io/alexkasongo-com/4fe75201-84ad-4890-b5f5-38e14ffc74f8_Alex+Kasongo.png?auto=compress,format' },
       { property: 'og:url', content: 'https://alexkasongo.com' },
@@ -18,7 +18,7 @@ export default {
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:site', content: 'https://alexkasongo.com' },
       { name: 'twitter:title', content: 'Alex Kasongo' },
-      { name: 'twitter:description', content: 'Hi, my name is Alex Kasongo. I am a front-end engineer, passionate for the web & solution archictecture' },
+      { name: 'twitter:description', content: 'Strategic Project Manager | Expert in Implementation, Stakeholder Relations, and Seamless Transitions.' },
       { name: 'twitter:creator', content: '@alexkasongo_' },
       { name: 'twitter:image', content: 'https://images.prismic.io/alexkasongo-com/4fe75201-84ad-4890-b5f5-38e14ffc74f8_Alex+Kasongo.png?auto=compress,format' },
       { name: 'twitter:image:alt', content: 'Screenshot of home page for Alex Kasongo site' },
