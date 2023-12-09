@@ -17,7 +17,7 @@
       <a class="about__link" href="#">order.</a>
     </p>
     <p class="about__text">
-      A master of, <a class="about__link" href="#">timelines</a>
+      A master of <a class="about__link" href="#">timelines</a>
     </p>
     <p class="about__text">
       a lover of success <a class="about__link" href="#">stories.</a>
